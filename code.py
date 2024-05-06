@@ -6,10 +6,9 @@ import wifi
 import time
 from random import randint
 
-#ssid = 'Labor 2.0'
-#password = 'nerdhoehle2'
-ssid = 'MagentaWLAN-VXPV'
-password = '57400371280026405925'
+#your wifi ssid/password
+ssid = 'example:mikeswifi69'
+password = 'example;123456789'
 wifi.radio.connect(ssid,password)
 
 pool = socketpool.SocketPool(wifi.radio)
@@ -17,8 +16,8 @@ requests = adafruit_requests.Session(pool)
 
 keypad = rgbkeypad.RGBKeypad()
 
-#ip="172.16.0.101"
-ip="192.168.2.155"                                              
+#Wled ip
+ip="exaple:192.168.2.155"                                              
 
 
 while True:
